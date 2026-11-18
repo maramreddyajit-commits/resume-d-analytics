@@ -2,7 +2,7 @@
 
 ## Environment and setup
 
-Python 3.14.7, macOS arm64. Exact analytical dependencies in requirements.lock.txt; run-manifest.json records versions and metric checksums. Official IBM CSV/license and UCI workbook downloaded through committed scripts. Raw inputs remain local. A clean virtual-environment installation is recorded in evidence/fresh-install.txt. No API key is required.
+Python 3.14.7, macOS arm64. Exact analytical dependencies in requirements.lock.txt; run-manifest.json records versions and metric checksums. Official IBM CSV/license and UCI workbook downloaded through committed scripts. Raw inputs remain local. Clean-environment rerun: **51 passed in 42.74s** (first import/compilation overhead), with no broken requirements. A clean virtual-environment installation is recorded in evidence/fresh-install.txt. No API key is required.
 
 ## Executed commands
 

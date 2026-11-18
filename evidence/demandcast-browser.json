@@ -8,5 +8,7 @@
     "Forecast CSV download",
     "Mobile layout"
   ],
-  "errors": []
+  "errors": [],
+  "audited_url": "https://maramreddyajit-commits.github.io/resume-d-analytics/#demandcast",
+  "access": "fresh unauthenticated browser"
 }

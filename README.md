@@ -1,5 +1,7 @@
 # Decision Atlas — Resume D analytics portfolio
 
+[Open public demo](https://maramreddyajit-commits.github.io/resume-d-analytics/) · [Publication details](PUBLICATION.md)
+
 Four executable analytics projects: customer churn, experiment inference, a retail SQL warehouse and time-series forecasting. Each includes a decision memo, reproducible metrics, tests and an interactive browser view. Built with AI coding assistance; no fabricated impact or company affiliation.
 
 ## Quick start

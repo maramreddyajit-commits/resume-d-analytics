@@ -3,5 +3,7 @@
     "ChurnIQ segment filter, threshold, contract filter, invalid scenario and CSV download",
     "ChurnIQ mobile overflow check"
   ],
-  "errors": []
+  "errors": [],
+  "audited_url": "https://maramreddyajit-commits.github.io/resume-d-analytics/#churniq",
+  "access": "fresh unauthenticated browser"
 }

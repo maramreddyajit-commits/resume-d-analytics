@@ -6,5 +6,7 @@
     "CSV download",
     "Mobile overflow"
   ],
-  "errors": []
+  "errors": [],
+  "audited_url": "https://maramreddyajit-commits.github.io/resume-d-analytics/#experimentlab",
+  "access": "fresh unauthenticated browser"
 }
