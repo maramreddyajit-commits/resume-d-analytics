@@ -1,0 +1,9 @@
+# Learn DemandCast
+
+Forecasting predicts later values from earlier ones. A rolling origin is a date where training stops; its next four weeks are predictions. The model is allowed to learn newly observed weeks before the next origin, but never the future of its current origin.
+
+Five tradeoffs: observed sales vs unobserved demand; weekly aggregation vs daily noise; training-only SKU selection vs hindsight selection; simple moving average vs a trend model that did not earn complexity; heuristic residual bands vs falsely guaranteed coverage.
+
+Ten prompts: (1) What is forecast? Positive merchandise units sold, not demand. (2) How many series? Twelve selected using the initial 52 weeks only. (3) Why zeros? No recorded sales in an otherwise observed week, not proven inventory availability. (4) Why expanding windows? Preserve chronology while adding newly observed history. (5) Baselines? Prior-year weekly seasonal naïve and last-four-week mean. (6) Why moving average? Best validation WAPE; Holt failed the required 5% improvement. (7) What is WAPE? Sum absolute errors / sum actual units, undefined when denominator zero. (8) What is MASE? Error scaled by training-only seasonal-naïve error, undefined if scale zero. (9) What is uncertainty? Pooled validation residual quantile, with reported test coverage and no guarantee. (10) What does safety stock mean? An assumption-driven planning buffer, not an implemented stock policy.
+
+Three-minute demo: choose a product; show weekly series and dated test rows; compare validation/test baselines; change lead time and service assumption; explain why actual purchasing needs inventory records. Exercise: manually verify score([1,3],[2,1],scale=2): MAE 1.5, RMSE sqrt(2.5), WAPE 0.75, MASE 0.75. Core src/forecast.py; UI docs/demandcast.js. Run README commands.

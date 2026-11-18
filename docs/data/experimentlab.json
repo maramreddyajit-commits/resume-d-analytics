@@ -1,0 +1,243 @@
+{
+  "label": "SYNTHETIC EXPERIMENT",
+  "seed": 20261117,
+  "rows": 20000,
+  "truth": {
+    "control_conversion": 0.12,
+    "treatment_conversion": 0.135,
+    "absolute_effect": 0.015,
+    "latency_added_ms": 15
+  },
+  "overall": {
+    "control_n": 10113,
+    "treatment_n": 9887,
+    "control_events": 1232,
+    "treatment_events": 1326,
+    "control_rate": 0.12182339562938792,
+    "treatment_rate": 0.13411550520886012,
+    "absolute_lift": 0.012292109579472202,
+    "relative_lift": 0.10090105858539154,
+    "null_standard_error": 0.004723469795913076,
+    "unpooled_standard_error": 0.004724858188008524,
+    "z": 2.6023474501959973,
+    "p_value": 0.00925879963090726,
+    "ci95_newcombe": [
+      0.0030331528278723947,
+      0.02155950986952441
+    ],
+    "bootstrap_ci95": [
+      0.003130951041138455,
+      0.021475484704641924
+    ],
+    "bootstrap_draws": 10000,
+    "fisher_two_sided": 0.009779351584965661,
+    "normal_approximation_ok": true,
+    "srm": {
+      "chi_square": 2.5538,
+      "p_value": 0.11002932963703733,
+      "flag_at_001": false
+    },
+    "latency_mean_control": 188.7503955305053,
+    "latency_mean_treatment": 203.08021644583798,
+    "latency_delta_ms": 14.329820915332675
+  },
+  "segments_exploratory": {
+    "desktop": {
+      "control_n": 5099,
+      "treatment_n": 4896,
+      "control_events": 621,
+      "treatment_events": 665,
+      "control_rate": 0.12178858599725437,
+      "treatment_rate": 0.1358251633986928,
+      "absolute_lift": 0.014036577401438433,
+      "relative_lift": 0.1152536363445001,
+      "null_standard_error": 0.006699617677013069,
+      "unpooled_standard_error": 0.006704468599905192,
+      "z": 2.0951311071972163,
+      "p_value": 0.03615933935864099,
+      "ci95_newcombe": [
+        0.0009027444973272059,
+        0.027198393909067253
+      ],
+      "bootstrap_ci95": [
+        0.00098788773942601,
+        0.02722441551880607
+      ],
+      "bootstrap_draws": 10000,
+      "fisher_two_sided": 0.0365108555372345,
+      "normal_approximation_ok": true,
+      "srm": {
+        "chi_square": 4.12296148074037,
+        "p_value": 0.04230496025816799,
+        "flag_at_001": false
+      },
+      "latency_mean_control": 188.91591292410277,
+      "latency_mean_treatment": 202.54169934640524,
+      "latency_delta_ms": 13.625786422302468
+    },
+    "mobile": {
+      "control_n": 5014,
+      "treatment_n": 4991,
+      "control_events": 611,
+      "treatment_events": 661,
+      "control_rate": 0.12185879537295573,
+      "treatment_rate": 0.1324383891003807,
+      "absolute_lift": 0.010579593727424966,
+      "relative_lift": 0.08681846636548081,
+      "null_standard_error": 0.006660867421475849,
+      "unpooled_standard_error": 0.006660571934871347,
+      "z": 1.5883207183068124,
+      "p_value": 0.11221383487322881,
+      "ci95_newcombe": [
+        -0.0024795828837506067,
+        0.023644438442109634
+      ],
+      "bootstrap_ci95": [
+        -0.0022150191445519407,
+        0.023211643343339056
+      ],
+      "bootstrap_draws": 10000,
+      "fisher_two_sided": 0.11859589945434387,
+      "normal_approximation_ok": true,
+      "srm": {
+        "chi_square": 0.052873563218390804,
+        "p_value": 0.8181364340501895,
+        "flag_at_001": false
+      },
+      "latency_mean_control": 188.58207219784603,
+      "latency_mean_treatment": 203.6084832698858,
+      "latency_delta_ms": 15.026411072039764
+    }
+  },
+  "quality": {
+    "duplicate_units": 0,
+    "missing_fields": 0,
+    "assignment": "Independent Bernoulli 50/50 at unit level",
+    "exposure_start": "2026-10-01 00:00:10+00:00",
+    "exposure_end": "2026-10-28 23:57:59+00:00",
+    "outliers_latency_above_1000ms": 0,
+    "exposure_semantics": "Each row is one assigned and exposed unit; simulated completed binary outcome; no observation censoring"
+  },
+  "design": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "baseline": 0.12,
+    "absolute_mde": 0.015,
+    "required_per_arm": 7761,
+    "mde_at_10000_per_arm": 0.013173378134461568
+  },
+  "peeking": {
+    "trials": 1000,
+    "looks": [
+      {
+        "per_arm_n": 500,
+        "cumulative_false_positive_rate": 0.031
+      },
+      {
+        "per_arm_n": 1000,
+        "cumulative_false_positive_rate": 0.069
+      },
+      {
+        "per_arm_n": 1500,
+        "cumulative_false_positive_rate": 0.096
+      },
+      {
+        "per_arm_n": 2000,
+        "cumulative_false_positive_rate": 0.114
+      },
+      {
+        "per_arm_n": 2500,
+        "cumulative_false_positive_rate": 0.135
+      },
+      {
+        "per_arm_n": 3000,
+        "cumulative_false_positive_rate": 0.15
+      },
+      {
+        "per_arm_n": 3500,
+        "cumulative_false_positive_rate": 0.167
+      },
+      {
+        "per_arm_n": 4000,
+        "cumulative_false_positive_rate": 0.175
+      },
+      {
+        "per_arm_n": 4500,
+        "cumulative_false_positive_rate": 0.189
+      },
+      {
+        "per_arm_n": 5000,
+        "cumulative_false_positive_rate": 0.197
+      },
+      {
+        "per_arm_n": 5500,
+        "cumulative_false_positive_rate": 0.206
+      },
+      {
+        "per_arm_n": 6000,
+        "cumulative_false_positive_rate": 0.212
+      },
+      {
+        "per_arm_n": 6500,
+        "cumulative_false_positive_rate": 0.216
+      },
+      {
+        "per_arm_n": 7000,
+        "cumulative_false_positive_rate": 0.222
+      },
+      {
+        "per_arm_n": 7500,
+        "cumulative_false_positive_rate": 0.226
+      },
+      {
+        "per_arm_n": 8000,
+        "cumulative_false_positive_rate": 0.231
+      },
+      {
+        "per_arm_n": 8500,
+        "cumulative_false_positive_rate": 0.238
+      },
+      {
+        "per_arm_n": 9000,
+        "cumulative_false_positive_rate": 0.241
+      },
+      {
+        "per_arm_n": 9500,
+        "cumulative_false_positive_rate": 0.245
+      },
+      {
+        "per_arm_n": 10000,
+        "cumulative_false_positive_rate": 0.247
+      }
+    ],
+    "fixed_horizon_false_positive_rate": 0.047,
+    "any_peek_false_positive_rate": 0.247,
+    "truth": "No treatment effect in either arm; independent Bernoulli p=0.12"
+  },
+  "tiny_fixture": {
+    "control_n": 4,
+    "treatment_n": 4,
+    "control_events": 1,
+    "treatment_events": 3,
+    "control_rate": 0.25,
+    "treatment_rate": 0.75,
+    "absolute_lift": 0.5,
+    "relative_lift": 2.0,
+    "null_standard_error": 0.3535533905932738,
+    "unpooled_standard_error": 0.30618621784789724,
+    "z": 1.414213562373095,
+    "p_value": 0.15729920705028516,
+    "ci95_newcombe": [
+      -0.13548840058295153,
+      0.7890832680847557
+    ],
+    "bootstrap_ci95": [
+      -0.25,
+      1.0
+    ],
+    "bootstrap_draws": 10000,
+    "fisher_two_sided": 0.48571428571428565,
+    "normal_approximation_ok": false
+  },
+  "decision": "Do not ship under the declared guardrail: treatment increases mean simulated latency by more than 10 ms. Conversion significance alone is insufficient. Design a latency-reduced variant and a new fixed-horizon test."
+}

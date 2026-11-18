@@ -1,0 +1,48 @@
+{
+  "source": "UCI Online Retail II; Chen (2012), DOI 10.24432/C5CG6D; CC BY 4.0",
+  "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "raw_rows": 1067371,
+  "clean_rows": 1021127,
+  "exclusion_counts": {
+    "accepted": 1021127,
+    "exact duplicate": 34335,
+    "invalid/zero price": 6019,
+    "non-merchandise/adjustment": 5889,
+    "inconsistent cancellation": 1
+  },
+  "date_start": "2009-12-01",
+  "date_end": "2011-12-09",
+  "currency": "GBP",
+  "timezone": "Unspecified source local time; no invented UTC conversion",
+  "missing_customer_raw": 243007,
+  "missing_customer_clean": 226964,
+  "raw_cancellation_lines": 19494,
+  "raw_negative_quantity_lines": 22950,
+  "raw_missing_description": 4382,
+  "totals": {
+    "lines": 1021127,
+    "gross_micro": 19642676020000,
+    "returns_micro": 716425970000,
+    "net_micro": 18926250050000,
+    "orders": 39516,
+    "known_customers": 5875
+  },
+  "top10_gross_share": 0.08044090776588596,
+  "sensitivity": {
+    "including_exact_duplicates_net_micro": 19382459880000,
+    "all_deduplicated_positive_price_transactions_net_micro": 19014209838000
+  },
+  "qa": {
+    "money_reconciliation": true,
+    "independent_pandas_net": true,
+    "independent_orders": true,
+    "monthly_reconciliation": true,
+    "monthly_order_reconciliation": true,
+    "unique_line_grain": true,
+    "dim_product_referential": true,
+    "dim_customer_referential": true,
+    "dim_location_referential": true,
+    "dim_date_referential": true
+  },
+  "limitations": "Historical observed invoice lines, not current business performance. Merchandise-only curated definition; exact duplicates removed with sensitivity. Partial December 2011; no margins, advertising, inventory or forward CLV."
+}

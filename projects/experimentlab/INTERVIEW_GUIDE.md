@@ -1,0 +1,9 @@
+# Learn ExperimentLab
+
+An experiment compares outcomes between randomly assigned groups. The denominator is exposed units, not conversions. Here all exposures and outcomes are generated, so the system is a statistical demonstration.
+
+Five decisions/tradeoffs: simulation gives known truth but no real impact; fixed-horizon avoids peeking bias but needs patience; score intervals improve edge behavior over naive Wald intervals; binary sufficient-statistic bootstrap is faster than row resampling; a latency guardrail can veto conversion significance.
+
+Ten prompts: (1) What is randomization? Independent 50/50 assignment, making groups comparable in expectation. (2) What is lift? Treatment rate minus control rate; relative lift divides by control. (3) What is a p-value? Probability under the null of a result at least this extreme, not probability the null is true. (4) Why pooled SE? The null hypothesizes equal rates. (5) Which CI? Newcombe difference of Wilson intervals. (6) Why bootstrap? An empirical-distribution cross-check; at boundaries it degenerates. (7) What is SRM? A chi-square check of assigned group counts against expected allocation. (8) What is power? Chance of rejecting the null at a specified true effect under design assumptions. (9) Why not ship? Simulated latency exceeds the declared 10 ms guardrail. (10) Can this prove causality? Only within the synthetic randomized mechanism and its assumptions; not for real users.
+
+Three-minute demo: identify synthetic truth and observed arm counts; distinguish percentage points from relative percent; compare score and bootstrap intervals; increase MDE to see required sample shrink; show peeking inflation and latency veto. Exercise: hand-calculate 1/4 vs 3/4, then run proportions(1,4,3,4). Explain why the exact p-value is not compelling despite the large lift. Core: src/analysis.py; UI: docs/experimentlab.js.

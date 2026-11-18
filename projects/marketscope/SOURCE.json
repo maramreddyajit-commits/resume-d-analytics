@@ -1,0 +1,9 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+  "access_date": "2026-11-17",
+  "sha256_zip": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+  "sha256_xlsx": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "citation": "Chen, D. (2012). Online Retail II. UCI. DOI 10.24432/C5CG6D",
+  "license": "CC BY 4.0",
+  "data_class": "Historical UK retailer transactions, 2009\u20132011; GBP"
+}

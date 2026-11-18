@@ -1,0 +1,18 @@
+{
+  "python": "3.14.7",
+  "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "openpyxl": "3.1.5",
+    "pytest": "9.2.0"
+  },
+  "artifacts": {
+    "churniq": "c3dd0a65722f15e8a74906c99f9ca2b44cce7384ce301f863b29a2c3c7e858a3",
+    "experimentlab": "82b6086db63e7b20dc64262a5dcbb790b882c54eaa2a06691e4978a9587f7819",
+    "marketscope": "8a7afdb2075d0ae70e4ae018f057f237126f013802bd306c6b78e215ac80ef7b",
+    "demandcast": "514b03f3d79aa34e65198f3bf99bed294c7c590d333c5c2c53fdca03ae94486d"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "ChurnIQ segment filter, threshold, contract filter, invalid scenario and CSV download",
+    "ChurnIQ mobile overflow check"
+  ],
+  "errors": []
+}

@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "SQL/dashboard total parity",
+    "Country/month filters",
+    "Empty range state",
+    "Product drill-down",
+    "Cohort selection",
+    "CSV download",
+    "Mobile layout"
+  ],
+  "errors": []
+}

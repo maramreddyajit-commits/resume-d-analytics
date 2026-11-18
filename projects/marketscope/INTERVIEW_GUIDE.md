@@ -1,0 +1,9 @@
+# Learn MarketScope
+
+A warehouse separates raw records, cleaned facts and reusable dimensions. One invoice can have many product lines. Gross sales sum positive line amounts; returns are the absolute value of negative lines; net subtracts them. Never count lines as orders.
+
+Five tradeoffs: preserve missing-ID revenue but exclude it from customer models; explicit merchandise scope rather than silently mixing adjustments; exact duplicate removal with a sensitivity instead of pretending certainty; integer micro-GBP for arithmetic; SQL views and CSV dashboard instead of claiming Power BI/dbt execution on an unsupported setup.
+
+Ten prompts: (1) Grain? One accepted invoice line. (2) Order count? Distinct positive invoice IDs. (3) Why four dimensions? Consistent date/customer/product/location relationships. (4) Negative quantities? Returns, not automatic bad rows. (5) Why unknown customer? Financial records can remain valid without identity. (6) What is RFM? Historical recency/frequency/monetary value, not future lifetime value. (7) Why window functions? Rank products and derive quartiles without collapsing detail. (8) Why complete months? December 2011 is truncated. (9) Independent verification? pandas integer sums and unique invoices match executed SQL plus referential checks. (10) What business metric is unavailable? Margin, because costs are missing.
+
+Three-minute demo: show source/date/GBP label; change country and month; explain gross/returns/net; inspect a top product; open RFM/cohort definitions; end with missing-ID and inventory limitations. Exercise: add two £1.25 units and a return of one unit to the toy fixture; verify gross £2.50, returns £1.25, net £1.25. Core source src/warehouse.py; SQL sql/models.sql; UI docs/marketscope.js. Reproduction commands are in README.

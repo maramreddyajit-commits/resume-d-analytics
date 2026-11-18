@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Product selection",
+    "Invalid lead time",
+    "Python/browser scenario parity",
+    "Service-level changes",
+    "Held-out rows detail",
+    "Forecast CSV download",
+    "Mobile layout"
+  ],
+  "errors": []
+}

@@ -1,0 +1,141 @@
+{
+  "source": "Derived from curated UCI Online Retail II positive merchandise quantities; CC BY 4.0",
+  "sku_count": 12,
+  "weeks": 104,
+  "week_start": "2009-12-13",
+  "week_end": "2011-12-04",
+  "selection": "Top 12 units sold in first 52 complete weeks only; fixed before validation",
+  "origins": {
+    "validation": [
+      60,
+      68,
+      76
+    ],
+    "test": [
+      88,
+      92,
+      96
+    ]
+  },
+  "horizon": 4,
+  "chosen_model": "moving_average",
+  "selection_rule": "Best validation WAPE baseline; Holt requires at least 5% relative validation WAPE improvement over that baseline",
+  "validation": {
+    "seasonal_naive": {
+      "mae": 561.4375,
+      "rmse": 1751.151028212904,
+      "wape": 1.029059111043226,
+      "mase": 1.2691040267243991,
+      "n": 144,
+      "absolute_error_sum": 80847.0,
+      "actual_sum": 78564.0,
+      "mase_defined_n": 144
+    },
+    "moving_average": {
+      "mae": 368.93402777777777,
+      "rmse": 653.9523640483643,
+      "wape": 0.6762193880148668,
+      "mase": 0.9158390269293868,
+      "n": 144,
+      "absolute_error_sum": 53126.5,
+      "actual_sum": 78564.0,
+      "mase_defined_n": 144
+    },
+    "holt": {
+      "mae": 400.94861502985646,
+      "rmse": 634.5753968132243,
+      "wape": 0.7348989430820646,
+      "mase": 1.0241770314140581,
+      "n": 144,
+      "absolute_error_sum": 57736.600564299326,
+      "actual_sum": 78564.0,
+      "mase_defined_n": 144
+    }
+  },
+  "test": {
+    "seasonal_naive": {
+      "mae": 637.8611111111111,
+      "rmse": 1421.497581777753,
+      "wape": 1.0866072801694053,
+      "mase": 1.2248688345832695,
+      "n": 144,
+      "absolute_error_sum": 91852.0,
+      "actual_sum": 84531.0,
+      "mase_defined_n": 144
+    },
+    "moving_average": {
+      "mae": 311.97569444444446,
+      "rmse": 565.3795692202423,
+      "wape": 0.531455915581266,
+      "mase": 0.625022431041336,
+      "n": 144,
+      "absolute_error_sum": 44924.5,
+      "actual_sum": 84531.0,
+      "mase_defined_n": 144
+    },
+    "holt": {
+      "mae": 313.07451545027374,
+      "rmse": 551.5412374713657,
+      "wape": 0.533327775902798,
+      "mase": 0.615414667649206,
+      "n": 144,
+      "absolute_error_sum": 45082.73022483942,
+      "actual_sum": 84531.0,
+      "mase_defined_n": 144
+    }
+  },
+  "independent": {
+    "mae": 311.97569444444446,
+    "rmse": 565.3795692202423,
+    "wape": 0.531455915581266
+  },
+  "uncertainty": {
+    "absolute_radius_units": 859.0,
+    "nominal_level": 0.9,
+    "test_coverage": 0.9236111111111112,
+    "method": "Pooled validation absolute-residual 90th percentile; heuristic, no calibrated coverage guarantee across heterogeneous SKUs"
+  },
+  "by_horizon": {
+    "1": {
+      "mae": 271.40972222222223,
+      "rmse": 378.8827531374317,
+      "wape": 0.5124698416028532,
+      "mase": 0.5724559321213536,
+      "n": 36,
+      "absolute_error_sum": 9770.75,
+      "actual_sum": 19066.0,
+      "mase_defined_n": 36
+    },
+    "2": {
+      "mae": 224.1875,
+      "rmse": 312.22781757787766,
+      "wape": 0.382409381663113,
+      "mase": 0.47495131803614643,
+      "n": 36,
+      "absolute_error_sum": 8070.75,
+      "actual_sum": 21105.0,
+      "mase_defined_n": 36
+    },
+    "3": {
+      "mae": 445.00694444444446,
+      "rmse": 899.3385310342139,
+      "wape": 0.6822353291883144,
+      "mase": 0.8047627656247466,
+      "n": 36,
+      "absolute_error_sum": 16020.25,
+      "actual_sum": 23482.0,
+      "mase_defined_n": 36
+    },
+    "4": {
+      "mae": 307.2986111111111,
+      "rmse": 478.2970678035194,
+      "wape": 0.5298759459718364,
+      "mase": 0.6479197083830975,
+      "n": 36,
+      "absolute_error_sum": 11062.75,
+      "actual_sum": 20878.0,
+      "mase_defined_n": 36
+    }
+  },
+  "limitations": "Units sold are constrained by unknown stock and demand. Missing sale weeks are zero observed sales, not confirmed in-stock zero demand. Returns excluded. No inventory, costs or lead times observed. Scenarios use assumptions; no actual savings or stockouts measured."
+}

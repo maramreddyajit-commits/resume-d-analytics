@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+projects/*/data/
+resume/
+*.sqlite
+node_modules/
+package-lock.json

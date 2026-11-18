@@ -1,0 +1,371 @@
+# Executed metrics
+
+```json
+{
+  "seed": 20261117,
+  "rows": 7043,
+  "excluded": 0,
+  "sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+  "missing": {
+    "tenure": 0,
+    "MonthlyCharges": 0,
+    "TotalCharges": 11,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0
+  },
+  "target_counts": {
+    "0": 5174,
+    "1": 1869
+  },
+  "splits": {
+    "train": 4225,
+    "validation": 1409,
+    "test": 1409
+  },
+  "split_overlap": 0,
+  "chosen_model": "random_forest",
+  "threshold": 0.36000000000000004,
+  "selection": "Highest validation average precision; threshold maximizes validation F1 on fixed 0.01 grid; test untouched until frozen",
+  "validation": {
+    "majority": {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 374,
+      "tn": 1035,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "selected": 0,
+      "roc_auc": 0.5,
+      "average_precision": 0.2654364797728886,
+      "brier": 0.19497996730765565,
+      "log_loss": 0.5786668716736688,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 1409,
+          "predicted": 0.2653254437869822,
+          "observed": 0.2654364797728886
+        }
+      ],
+      "ece": 0.00011103598590639363
+    },
+    "logistic": {
+      "threshold": 0.3500000000000001,
+      "tp": 270,
+      "fp": 196,
+      "fn": 104,
+      "tn": 839,
+      "precision": 0.5793991416309013,
+      "recall": 0.7219251336898396,
+      "f1": 0.6428571428571428,
+      "selected": 466,
+      "roc_auc": 0.842935751375649,
+      "average_precision": 0.6614631202647211,
+      "brier": 0.13522634297817998,
+      "log_loss": 0.4211343458485495,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 514,
+          "predicted": 0.035118736703760665,
+          "observed": 0.04085603112840467
+        },
+        {
+          "count": 202,
+          "predicted": 0.15091609962996216,
+          "observed": 0.15346534653465346
+        },
+        {
+          "count": 175,
+          "predicted": 0.2516164289481863,
+          "observed": 0.22857142857142856
+        },
+        {
+          "count": 111,
+          "predicted": 0.34884843796927834,
+          "observed": 0.3153153153153153
+        },
+        {
+          "count": 97,
+          "predicted": 0.44991521045419414,
+          "observed": 0.4536082474226804
+        },
+        {
+          "count": 113,
+          "predicted": 0.5496915461909324,
+          "observed": 0.5309734513274337
+        },
+        {
+          "count": 120,
+          "predicted": 0.650334117595324,
+          "observed": 0.6833333333333333
+        },
+        {
+          "count": 73,
+          "predicted": 0.7380163639468985,
+          "observed": 0.7808219178082192
+        },
+        {
+          "count": 4,
+          "predicted": 0.8041039221697873,
+          "observed": 1.0
+        }
+      ],
+      "ece": 0.015302082204978048
+    },
+    "random_forest": {
+      "threshold": 0.36000000000000004,
+      "tp": 267,
+      "fp": 181,
+      "fn": 107,
+      "tn": 854,
+      "precision": 0.5959821428571429,
+      "recall": 0.713903743315508,
+      "f1": 0.6496350364963505,
+      "selected": 448,
+      "roc_auc": 0.8459014699423907,
+      "average_precision": 0.6661228041224584,
+      "brier": 0.1344390696580915,
+      "log_loss": 0.41945442945820444,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 445,
+          "predicted": 0.036903066399200934,
+          "observed": 0.03146067415730337
+        },
+        {
+          "count": 254,
+          "predicted": 0.14628862896329992,
+          "observed": 0.14173228346456693
+        },
+        {
+          "count": 176,
+          "predicted": 0.24400811062802374,
+          "observed": 0.19886363636363635
+        },
+        {
+          "count": 130,
+          "predicted": 0.34797910063457504,
+          "observed": 0.33076923076923076
+        },
+        {
+          "count": 157,
+          "predicted": 0.4471974155116781,
+          "observed": 0.4713375796178344
+        },
+        {
+          "count": 111,
+          "predicted": 0.5461754616983658,
+          "observed": 0.6396396396396397
+        },
+        {
+          "count": 60,
+          "predicted": 0.6393367405868954,
+          "observed": 0.6166666666666667
+        },
+        {
+          "count": 55,
+          "predicted": 0.7504560298144579,
+          "observed": 0.8545454545454545
+        },
+        {
+          "count": 21,
+          "predicted": 0.8443318108783396,
+          "observed": 0.8095238095238095
+        }
+      ],
+      "ece": 0.02536728686824779
+    }
+  },
+  "test": {
+    "logistic": {
+      "threshold": 0.3500000000000001,
+      "tp": 253,
+      "fp": 192,
+      "fn": 121,
+      "tn": 843,
+      "precision": 0.5685393258426966,
+      "recall": 0.6764705882352942,
+      "f1": 0.6178266178266179,
+      "selected": 445,
+      "roc_auc": 0.8520214937094732,
+      "average_precision": 0.6640013252058836,
+      "brier": 0.1337310234089173,
+      "log_loss": 0.40745415696322507,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 532,
+          "predicted": 0.03519979711110308,
+          "observed": 0.02443609022556391
+        },
+        {
+          "count": 191,
+          "predicted": 0.14993413765636288,
+          "observed": 0.20418848167539266
+        },
+        {
+          "count": 169,
+          "predicted": 0.2561015982022483,
+          "observed": 0.2485207100591716
+        },
+        {
+          "count": 129,
+          "predicted": 0.34756254110907225,
+          "observed": 0.3023255813953488
+        },
+        {
+          "count": 95,
+          "predicted": 0.447464476027447,
+          "observed": 0.4631578947368421
+        },
+        {
+          "count": 102,
+          "predicted": 0.5463164822483443,
+          "observed": 0.5392156862745098
+        },
+        {
+          "count": 89,
+          "predicted": 0.6504897226836779,
+          "observed": 0.7191011235955056
+        },
+        {
+          "count": 100,
+          "predicted": 0.7341520152017184,
+          "observed": 0.76
+        },
+        {
+          "count": 2,
+          "predicted": 0.8032724633570503,
+          "observed": 1.0
+        }
+      ],
+      "ece": 0.024489307218582123
+    },
+    "random_forest": {
+      "threshold": 0.36000000000000004,
+      "tp": 264,
+      "fp": 178,
+      "fn": 110,
+      "tn": 857,
+      "precision": 0.5972850678733032,
+      "recall": 0.7058823529411765,
+      "f1": 0.6470588235294118,
+      "selected": 442,
+      "roc_auc": 0.8580033067245345,
+      "average_precision": 0.6580378211223654,
+      "brier": 0.13265951565457657,
+      "log_loss": 0.4046140234576283,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 456,
+          "predicted": 0.03475088322291168,
+          "observed": 0.017543859649122806
+        },
+        {
+          "count": 251,
+          "predicted": 0.14597494599223076,
+          "observed": 0.15139442231075698
+        },
+        {
+          "count": 159,
+          "predicted": 0.24855154356834813,
+          "observed": 0.25157232704402516
+        },
+        {
+          "count": 166,
+          "predicted": 0.34871832121943475,
+          "observed": 0.2891566265060241
+        },
+        {
+          "count": 137,
+          "predicted": 0.45043247322023616,
+          "observed": 0.4744525547445255
+        },
+        {
+          "count": 96,
+          "predicted": 0.5545588544842168,
+          "observed": 0.7083333333333334
+        },
+        {
+          "count": 66,
+          "predicted": 0.6426350020394017,
+          "observed": 0.7272727272727273
+        },
+        {
+          "count": 47,
+          "predicted": 0.7477374625200517,
+          "observed": 0.723404255319149
+        },
+        {
+          "count": 31,
+          "predicted": 0.8459118943242168,
+          "observed": 0.8064516129032258
+        }
+      ],
+      "ece": 0.03234943766280489
+    },
+    "majority": {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 374,
+      "tn": 1035,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "selected": 0,
+      "roc_auc": 0.5,
+      "average_precision": 0.2654364797728886,
+      "brier": 0.19497996730765565,
+      "log_loss": 0.5786668716736689,
+      "prevalence": 0.2654364797728886,
+      "calibration": [
+        {
+          "count": 1409,
+          "predicted": 0.2653254437869822,
+          "observed": 0.2654364797728886
+        }
+      ],
+      "ece": 0.00011103598590639363
+    }
+  },
+  "independent": {
+    "roc_auc": 0.8580033067245344,
+    "average_precision": 0.6580378211223656,
+    "brier": 0.13265951565457657,
+    "threshold": 0.36000000000000004,
+    "tp": 264,
+    "fp": 178,
+    "fn": 110,
+    "tn": 857,
+    "precision": 0.5972850678733032,
+    "recall": 0.7058823529411765,
+    "f1": 0.6470588235294118,
+    "selected": 442
+  },
+  "scenario": {
+    "contacts": 50,
+    "spend": 500,
+    "assumed_prevented_churn": 4.098113647031511,
+    "modeled_net_value": 729.4340941094533
+  },
+  "limitations": "IBM fictional sample; cross-sectional split, no event timestamps. Associations are not causes. Scenario effect and value are assumptions, not measured retention or savings."
+}
+```
+
+ROC-AUC uses tie-aware ranking. PR summary is average precision, not trapezoidal area. Brier is mean squared probability error. Confusion counts use scores >= threshold. The independent implementation reproduces ROC-AUC/AP/Brier to 1e-12. Full evidence: evidence/churniq-run.txt and churniq-tests.txt.

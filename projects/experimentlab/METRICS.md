@@ -1,0 +1,49 @@
+# Executed synthetic results
+
+```json
+{
+  "rows": 20000,
+  "overall": {
+    "control_n": 10113,
+    "treatment_n": 9887,
+    "control_events": 1232,
+    "treatment_events": 1326,
+    "control_rate": 0.12182339562938792,
+    "treatment_rate": 0.13411550520886012,
+    "absolute_lift": 0.012292109579472202,
+    "relative_lift": 0.10090105858539154,
+    "null_standard_error": 0.004723469795913076,
+    "unpooled_standard_error": 0.004724858188008524,
+    "z": 2.6023474501959973,
+    "p_value": 0.00925879963090726,
+    "ci95_newcombe": [
+      0.0030331528278723947,
+      0.02155950986952441
+    ],
+    "bootstrap_ci95": [
+      0.003130951041138455,
+      0.021475484704641924
+    ],
+    "bootstrap_draws": 10000,
+    "fisher_two_sided": 0.009779351584965661,
+    "normal_approximation_ok": true,
+    "srm": {
+      "chi_square": 2.5538,
+      "p_value": 0.11002932963703733,
+      "flag_at_001": false
+    },
+    "latency_mean_control": 188.7503955305053,
+    "latency_mean_treatment": 203.08021644583798,
+    "latency_delta_ms": 14.329820915332675
+  },
+  "design": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "baseline": 0.12,
+    "absolute_mde": 0.015,
+    "required_per_arm": 7761,
+    "mde_at_10000_per_arm": 0.013173378134461568
+  },
+  "decision": "Do not ship under the declared guardrail: treatment increases mean simulated latency by more than 10 ms. Conversion significance alone is insufficient. Design a latency-reduced variant and a new fixed-horizon test."
+}
+```
